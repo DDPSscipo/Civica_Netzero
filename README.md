@@ -78,6 +78,7 @@ We used Python for our code, which was developed and aided by various online res
 We produced two time-series graphs to explore the number of Tweets throughout the 2021 and 2023 time periods.
 
 ![Figure 1](https://github.com/DDPSscipo/Civica_Netzero/assets/169551434/95d16e47-9dbe-4440-9daf-4d9f6ff8f947)
+
 Figure 1: Number of Tweets Mentioning “Net Zero” Over Time, 09/01/2021-11/30/2021 
 
 In the 2021 graph (Figure 1), we observe a large increase in the number of Tweets on October 19, 2021. At 538 Tweets, this date received the highest recorded number of Tweets during the 2021 period. This is not surprising given that October 19 was the date of Net Zero’s official implementation in the UK. In the following weeks, there were more dramatic spikes in Tweets and an overall higher number of Tweets compared to before the policy’s implementation. The second highest recorded number of Tweets was 426 on November 3, 2021, which happened to be the date the UK government announced its goal to become the “first ever net zero aligned global financial centre” at the United Nations Climate Change Conference (COP 26) (Plummer, R. & Timmins, B.).
@@ -85,7 +86,28 @@ In the 2021 graph (Figure 1), we observe a large increase in the number of Tweet
 Below are sample Tweets from the 2021 period which illustrate two accounts’ contributions to the discourse. Image 1 is the Tweet that garnered the most likes during the entire captured period in 2021. Topics covered in the Twitter discourse will be explored in-depth in the later Topic Modeling and Network Analysis sections.
 
 
+![Image 1](https://github.com/DDPSscipo/Civica_Netzero/assets/169551434/fa7742f4-2b33-4b1b-b09f-45e4b8191e25)
 
+Image 1: Tweet about “Net Zero” from 2021 dataset
+
+
+![Image 2](https://github.com/DDPSscipo/Civica_Netzero/assets/169551434/2bdd4583-3f0d-45e6-add7-bc88b225b59b)
+
+Image 2: Tweet about “Net Zero” from 2021 dataset
+
+Turning to the 2023 graph (Figure 2), we see fairly consistent discourse across the three months, with the exception of a major spike on September 20, 2023. Throughout the captured period in 2023, the number of daily Tweets containing “net zero” and “uk” was often fewer than 100 per day. On September 20, 2023, there were 1080 Tweets, which is just over two times greater than the highest number of Tweets in the 2021 period (538 Tweets). This date featured a prominent speech by UK Prime Minister Rishi Sunak. He announced changes to the Net Zero policy, specifically delays to certain climate targets on cars, boilers, and insulation, though Sunak declared that “he still wishes to meet the legally binding 2025 target” (Horton, 2023).
+
+
+![Figure 2](https://github.com/DDPSscipo/Civica_Netzero/assets/169551434/7bc7d91d-7084-4246-a2cf-1b09acb2d28c)
+
+Figure 2: Number of Tweets Mentioning “Net Zero” Over Time, 09/01/2023-11/30/2023
+
+
+Below are a few sample Tweets pulled from the 2023 period: 
+
+![Image 3](https://github.com/DDPSscipo/Civica_Netzero/assets/169551434/413b6e63-bef9-4b61-bd20-f094b3dfd75b)
+
+Image 3: Tweet about “Net Zero” from 2023 dataset
 
 
 
