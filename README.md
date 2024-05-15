@@ -95,7 +95,6 @@ As climate change will necessitate more aggressive policy responses, people will
 ## References
 
 Chu, W., & Fletcher, F. (2014). Social media and agenda setting. Canadian democracy from the ground up: Perceptions and performance, 125-147.
-<pre>
 Client Earth. (18 July 2022). Historic High Court ruling finds UK government’s climate strategy ‘unlawful’. https://www.clientearth.org/latest/press-office/press/historic-high-court-ruling-finds-uk-government-s-climate-strategy-unlawful/
 Department for Energy Security & Net Zero. (4 April 2023). Powering Up Britain: Net Zero Growth Plan. https://www.gov.uk/government/publications/powering-up-britain/powering-up-britain-net-zero-growth-plan
 Gayle, D.  (18 July 2022). Court orders UK government to explain how net zero policies will reach targets. The Guardian. https://www.theguardian.com/environment/2022/jul/18/court-orders-uk-government-to-explain-how-net-zero-policies-will-reach-targets
