@@ -58,7 +58,7 @@ Our broad approach to data collection included gathering data for two sources be
 
 For Twitter, we scraped Tweets by month that included the keywords “net zero” and “uk” utilizing the Firefox extensions Zeeschuimer and FoxScroller. We limited captured Tweets to being written in English and with a minimum of one like. The keyword search is included below (with the initial month of September 2021 for demonstrative purposes): 
 
-("net zero" OR "netzero") AND "uk" min_faves:1 lang:en until:2021-09-30 since:2021-09-01
+_("net zero" OR "netzero") AND "uk" min_faves:1 lang:en until:2021-09-30 since:2021-09-01_
 
 We utilized the VPN Mullvad and set the location to London, England. In total, we collected 15,998 Tweets over the two three-month periods in 2021 and 2023, with 8,656 Tweets during the 2021 period and 7,342 during the 2023 period. During data collection, we encountered an error while scraping Twitter data – Tweets from the final date of each month during both periods (September 30, 2021; October 31, 2021; November 30, 2021; September 30, 2023; October 31, 2023; and November 30, 2023) were not collected by Zeeschuimer despite search terms requesting data through the end of the month. This omission is thus one important limitation that we will discuss in greater depth in the Limitations section of the report. We were unable to add the missing dates’ Tweets into our dataset for analysis because of time constraints and for the fact that various team members had already started their separate analyses. 
 
@@ -72,3 +72,7 @@ To conduct the descriptive analysis for the data from Twitter and The Guardian, 
 
 We used Python for our code, which was developed and aided by various online resources and examples, including ChatGPT. We also used Gephi for data visualization.
 
+## Results and Discussion
+
+### Descriptive analysis: Twitter 
+We produced two time-series graphs to explore the number of Tweets throughout the 2021 and 2023 time periods.
