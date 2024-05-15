@@ -5,6 +5,8 @@ Sciences Po Paris – Spring 2024
 
 Tathagata CHAKRABORTY, Jiexuan CHEN, Ilse Ameyalli SANCHEZ PACHECO, Sophie SHANSHORY, & Elena TOMESANI
 
+<p align="justify"> 
+<p align="justify"> 
 
 ## Table of Contents
 - [Introduction](#background)
