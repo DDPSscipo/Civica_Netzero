@@ -77,6 +77,9 @@ We used Python for our code, which was developed and aided by various online res
 ### Descriptive analysis: Twitter 
 We produced two time-series graphs to explore the number of Tweets throughout the 2021 and 2023 time periods.
 
+![Figure 1](https://github.com/DDPSscipo/Civica_Netzero/assets/169551434/95d16e47-9dbe-4440-9daf-4d9f6ff8f947)
+
+
 ## Limitations
 As previously mentioned, there was an issue with collecting Tweets via Zeeschuimer for six days within the intended dataset. The total number of Tweets captured mentioning “net zero” and “uk” are thus a slight undercount over two time-periods. Despite this limitation, because of the significant number of Tweets (nearly 16,000) over six months, the omission of a small number of days worth of Tweets likely would not skew the results. Ideally, we would have incorporated these dates into our dataset, which would have corrected the limitation; however, we were unable to do so given that our asynchronous data analyses were already underway.
 
