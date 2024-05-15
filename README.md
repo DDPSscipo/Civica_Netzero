@@ -1,12 +1,12 @@
 # An Analysis of the Net Zero Strategy: Decoding the UK’s Climate Discourse on Twitter and in The Guardian
 
+<p align="justify"> 
 CIVICA: Diving into Digital Public Spaces 
+<p align="justify"> 
 Sciences Po Paris – Spring 2024
-
+<p align="justify"> 
 Tathagata CHAKRABORTY, Jiexuan CHEN, Ilse Ameyalli SANCHEZ PACHECO, Sophie SHANSHORY, & Elena TOMESANI
 
-<p align="justify"> 
-<p align="justify"> 
 
 ## Table of Contents
 - [Introduction](#background)
