@@ -10,6 +10,7 @@ Tathagata CHAKRABORTY, Jiexuan CHEN, Ilse Ameyalli SANCHEZ PACHECO, Sophie SHANS
 
 ## Table of Contents
 - [Introduction](#background)
+- [Overview: The Implementation of Net Zero](#overview)
 - [Literature Review](#lit)
 - [Methodology](#method)
 - [Results and Discussion](#result)
