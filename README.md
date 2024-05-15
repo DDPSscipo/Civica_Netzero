@@ -8,18 +8,9 @@ Tathagata CHAKRABORTY, Jiexuan CHEN, Ilse Ameyalli SANCHEZ PACHECO, Sophie SHANS
 
 ## Table of Contents
 - [Introduction](#background)
-- [Hypothesis](#ques)
-- [Overview: The Implementation of Net Zero](#context)
 - [Literature Review](#lit)
 - [Methodology](#method)
 - [Results and Discussion](#result)
-- [Descriptive Analysis: Twitter](#twitter)
-- [Descriptive Analysis: The Guardian](#guardian)
-- [Descriptive analysis across two sources](#source)
-- [Sentiment analysis: Twitter](#sentw)
-- [Sentiment analysis: The Guardian](#senguar)
-- [Topic Modelling](#topic)
-- [Network Analysis](#network)
 - [Limitations](#limit)
 - [Conclusions](#conclu)
 - [References](#refer)
