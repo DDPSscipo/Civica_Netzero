@@ -31,7 +31,7 @@ April 2024 broke another record in the climate change arena. Surpassing the 1991
 To develop hypotheses, our team conducted an initial scan of the discourse on Twitter as well as reviewed how The Guardian framed its articles covering the Net Zero Strategy. We observed a surprising amount of Tweets relating Net Zero to broader socio-political critiques. In particular, the term seemed to be deployed in a “culture wars” context by accounts expressing right-wing views, such as opposition to both immigration and environmental protections.
 
 As a result, we derived three hypotheses to understand the Twitter discourse and The Guardian coverage of Net Zero in the UK:
-<p align="justify"> 
+
 **Hypothesis 1:** Traditional media coverage by The Guardian on Net Zero mirrors an overall increase in social media interest on Twitter, whilst they may differ in focus.
 
 **Hypothesis 2:** Net Zero has often been mobilized on social media in the context of bipartisan culture wars.
