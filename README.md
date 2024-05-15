@@ -274,14 +274,36 @@ First of all, the co-hashtag network is much more centralized in 2021 because of
 
 Figure 15: Co-hashtag Network, 2021
 
+![cohashtag_2023](https://github.com/DDPSscipo/Civica_Netzero/assets/114085950/a74bdbb3-ecfd-4abc-b0f4-1d9eb1fc0a32)
 
+Figure 16: Co-hashtag Network, 2023
 
+### II. User Interaction Network
 
+#### Method
+The user interaction network is directed. Each node is a user, and each edge represents a relation of one user being quoted or mentioned by another user. The networks use ForceAtlas2 algorithm in Gephi, preventing overlap and having a scale of 200 to make the graph more scattered for better readability. The data is filtered by “giant component” criteria, and the degree range is set to start from 1 to exclude the users that do not have any interactions with others. The sizes of the nodes represent the level of influence of the user, and are decided by their in-degree, i.e., the number of edges coming into a vertex in a directed graph. Nodes with higher in-degree are bigger. The colors of the nodes are decided by their communities, i.e., sets of nodes that are more densely linked among each other than with nodes in other communities.
 
+#### Purpose
+The purpose of this analysis is to see the influential accounts on Twitter regarding Net Zero policy and the evolution of influence landscape from 2021 to 2023.
 
+#### Results
+In 2021, most of the “influencers” were official accounts or people heavily involved in official business. Three of the four communities (pink, blue, green) detected were led by either NGOs’ or other organizations’ Twitter accounts. The other note-worthy community (gray), which is relatively far-away from the central interactions, was led by several individuals that, according to their profiles, generally made it their objective to debunk climate change deniers. Within all four of the communities, the general attitude towards Net Zero policy was positive and supportive.
 
+![interaction_2021](https://github.com/DDPSscipo/Civica_Netzero/assets/114085950/a09ddf6e-83d7-4779-8a55-9679520dc926)
 
-#ESTO YA ESTABA
+Figure 17: User Interaction Network, 2021
+
+In 2023, however, the spotlight on the stage shifted. As shown in the Figure 18 below, official accounts that advocated for Net Zero policy heavily decreased in their influence in 2023. On the contrary, two communities (pink and blue) led by individual accounts that stood on the opposition side arose in the picture. From their profiles, bios, and Tweets on Net Zero and other environmental topics, the representatives of both communities (pink and blue) either did not approve of the UK Net Zero policy itself, or did not believe in the climate crisis at all. Some of the accounts demonstrated an evident political inclination towards conservatism. From the existing evidence, we do not have an explanation as to why these people with similar profiles are separated into two communities that closely interact within themselves.
+
+An interesting finding is that none of the 12 most influential opposers from the pink and blue communities in 2023 network can be found in the 2021 data. It is possible that their Tweets were simply not covered in data collection. However, given the amount of Tweets we managed to scrape, it’s also highly likely that they only started to voice against the policy afterwards.
+
+<img width="788" alt="interaction_2023" src="https://github.com/DDPSscipo/Civica_Netzero/assets/114085950/25414cbc-7fd1-4f46-9fbd-797787421b28">
+
+Figure 18: User Interaction Network, 2023
+
+The comparison of User Interaction Networks of 2021 and 2023 shows that the discourse around Net Zero on Twitter had a significant shift in influence landscape: from mainly being led by official accounts with a generally supportive attitude towards the policy in 2021 to mainly being led by individuals who opposed it. Combined with the conservative political stance shown by some of the individuals and that these opposers were only active on this particular issue on Twitter in 2023 and not 2021, this analysis provides some support for Hypothesis 2. It is possible that discussion surrounding Net Zero has been mobilized, at least to some extent, on Twitter in the context of bipartisan culture wars.
+
+The opinion leaders’ shift from 2021 to 2023 also supports our Hypothesis 3, as the increased participation of individual accounts (rather than heavier participation by official accounts, as seen in 2021) demonstrates an increased public interest in the net zero concept.
 
 ## Limitations
 As previously mentioned, there was an issue with collecting Tweets via Zeeschuimer for six days within the intended dataset. The total number of Tweets captured mentioning “net zero” and “uk” are thus a slight undercount over two time-periods. Despite this limitation, because of the significant number of Tweets (nearly 16,000) over six months, the omission of a small number of days worth of Tweets likely would not skew the results. Ideally, we would have incorporated these dates into our dataset, which would have corrected the limitation; however, we were unable to do so given that our asynchronous data analyses were already underway.
