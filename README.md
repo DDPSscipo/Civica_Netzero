@@ -2,8 +2,7 @@
 
 <p align="justify"> 
 CIVICA: Diving into Digital Public Spaces 
-<p align="justify"> 
-Sciences Po Paris – Spring 2024
+<Sciences Po Paris – Spring 2024
 <p align="justify"> 
 Tathagata CHAKRABORTY, Jiexuan CHEN, Ilse Ameyalli SANCHEZ PACHECO, Sophie SHANSHORY, & Elena TOMESANI
 
