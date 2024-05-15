@@ -76,3 +76,39 @@ We used Python for our code, which was developed and aided by various online res
 
 ### Descriptive analysis: Twitter 
 We produced two time-series graphs to explore the number of Tweets throughout the 2021 and 2023 time periods.
+
+## Limitations
+As previously mentioned, there was an issue with collecting Tweets via Zeeschuimer for six days within the intended dataset. The total number of Tweets captured mentioning “net zero” and “uk” are thus a slight undercount over two time-periods. Despite this limitation, because of the significant number of Tweets (nearly 16,000) over six months, the omission of a small number of days worth of Tweets likely would not skew the results. Ideally, we would have incorporated these dates into our dataset, which would have corrected the limitation; however, we were unable to do so given that our asynchronous data analyses were already underway.
+
+Another limitation relating to data collection concerns the terminology and general news surrounding Net Zero. There are other geographical locations in which “net zero” is used; for example, Australia’s decarbonization policy is also called Net Zero. Utilizing broad search terms (even with specifying that Tweets needed to mention “uk”) likely captured some non-relevant data, though it is hard to determine if this would have had a major impact on topics discussed in relation to Net Zero.  
+
+A third limitation for data collection is the rate limits on The Guardian’s API, which made it difficult to collect all of our news data in one day.
+
+As noted in our brief discussion of sentiment analysis, using such an approach to understand the attitudes of the Net Zero discussion on Twitter largely failed. The RoBERTa model did not recognize positive or negative sentiments across Tweets, only recognizing a negligible number of Tweets as positive or negative. Even from briefly reviewing a handful of random Tweets, we can see that there were strong feelings expressed by people online, and that Net Zero was being associated with a host of topics, including the environment but also broader socio-political topics. The incompatibility of these results may be because the content and references within the Tweets were too subtle for RoBERTa to understand. Additionally, we did not fine tune or train the model for this analysis, which also likely contributed to the failed results. Finally, there are broader challenges when it comes to interpreting sentiment analysis results, so such an approach does not seem particularly useful for answering our research questions and hypotheses. 
+
+Finally, with respect to topic modeling, the most considerable limitation to our analysis can be imputed to the high number of outliers in both the 2021 and 2023 datasets. Grouped together in “topic -1”, outliers often accounted for the vast majority of observations. In particular, for the 2021 period, outliers amounted to 3072 whilst the next biggest topic reached 209 Tweets. Similarly for 2023, outliers were 2854 and topic 0 had 188 Tweets. We could explain this high of a number of outliers with the complexity and nuance of the public discourse around net zero. It can be hard for BERTopic to detect the multiple interpretations that Tweets have and place them in defined categories. We have encountered a similar issue when performing the sentiment analysis, that ultimately struggle to understand the complexity of certain contributions. This issue evidently questions the validity of our results, especially those related to Hypothesis 2. 
+
+## Conclusions
+This investigation aimed to explore and unpack the social and news media discourse about the UK’s Net Zero climate policy. It led to several fascinating findings. In our research, we observed politicians, civil society organizations/groups, and individuals engaging in commentary about Net Zero on Twitter. In 2021, official organizations and leaders dominated the conversation, which more narrowly centered on topics specifically related to climate change and the implementation of Net Zero. Two years later in 2023, we began to see new players (more private individuals), whose discourse on Net Zero was at times associated (but not overwhelmingly) with broad socio-political issues and voicing opposition to environmental policies and immigration. In traditional media, The Guardian’s coverage in some ways mirrored the engagement on Twitter – pieces were published by the newspaper during moments of critical development in both 2021 and 2023, providing narratives to the implementation or changes to Net Zero and offering a platform for opinion pieces on the policy.
+As climate change will necessitate more aggressive policy responses, people will continue to want their voices to be heard on the topic. Individuals, politicians, and civil society groups alike share information and opinions, shaping conversation on and offline. The discourse on social media platforms like Twitter can potentially reveal trends in public interest, which can in turn bolster as well as inform the insights within traditional media.  
+
+## Bibliography
+
+Chu, W., & Fletcher, F. (2014). Social media and agenda setting. Canadian democracy from the ground up: Perceptions and performance, 125-147.
+Client Earth. (18 July 2022). Historic High Court ruling finds UK government’s climate strategy ‘unlawful’. https://www.clientearth.org/latest/press-office/press/historic-high-court-ruling-finds-uk-government-s-climate-strategy-unlawful/
+Department for Energy Security & Net Zero. (4 April 2023). Powering Up Britain: Net Zero Growth Plan. https://www.gov.uk/government/publications/powering-up-britain/powering-up-britain-net-zero-growth-plan
+Gayle, D.  (18 July 2022). Court orders UK government to explain how net zero policies will reach targets. The Guardian. https://www.theguardian.com/environment/2022/jul/18/court-orders-uk-government-to-explain-how-net-zero-policies-will-reach-targets
+Gilardi, F., Gessler, T., Kubli, M., & Müller, S. (2022). Social media and political agenda setting. Political communication, 39(1), 39-60.
+Government of the United Kingdom. (2023, 20 September). PM speech on Net Zero: 20 September 2023. https://www.gov.uk/government/speeches/pm-speech-on-net-zero-20-september-2023#:~:text=This%20country%20is%20proud%20to,eases%20the%20burdens%20on%20families. 
+Grootendorst, M. (2022). BERTopic: Neural topic modeling with a class-based TF-IDF procedure. arXiv preprint arXiv:2203.05794. 
+Horton, H. (2023, 20 September). UK net zero policies: what has Sunak scrapped and what do changes mean? The Guardian. https://www.theguardian.com/politics/2023/sep/20/uk-net-zero-policies-scrapped-what-do-changes-mean. 
+Legislation. “Climate Change Act 2008.” Legislation.Gov.Uk, Statute Law Database, www.legislation.gov.uk/ukpga/2008/27/introduction. 
+McCombs, M. E., & Shaw, D. L. (1972). The Agenda-Setting Function of Mass Media. Public Opinion Quarterly, 36 (2), 176–187.
+Mooney, A., Bernard, S., & Harris, B. (2024, May 8). Record temperatures expected to continue to drive extreme weather. Financial Times. https://www.ft.com/content/cf8f2870-6024-4c35-ae55-d0f9b465fdcd. 
+Plummer, R. & Timmins, B. (2021, 3 November). COP26: UK firms forced to show how they will hit net zero. BBC. https://www.bbc.com/news/business-59136214. 
+Rahat, G. and Sheafer, T. (2007). The personalization(s) of Politics: Israel 1949-2003, Political Communication, 24(1): 65-80.
+United Nations. “Net Zero Coalition.” United Nations, www.un.org/en/climatechange/net-zero-coalition. 
+
+
+
+
