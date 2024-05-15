@@ -259,7 +259,7 @@ Figure 14: Documents and topics for the 2023 period after applying the min_clust
 Almost the entirety of the observations were grouped under Topic 0 with a count of 7093 out of 7342. All the topics retrieved are closely adherent to net zero, as they tackle climate, oil, energy, efficiency, and gas broadly. What the visualization in Figure 14 brings up is how much topic 0 is prevalent, how not “clustered” it is for a topic, as it spreads vastly. The other topics almost seem irrelevant. This outlook does not allow us to follow up on those arguments related to the partial validity of Hypothesis 2 in the previous paragraph. We could believe that the “more polarized” Tweets are contained in topic 0, hence that their number was so small that they were “absorbed” by a broader category. This could mean that Tweets belonging to a culture war are not of significant number to determine the broader conversation around Net Zero on Twitter. Thus, Hypothesis 2 seems to hold very limited validity. 
 
 ### Network analysis
-### I. Co-hashtag Network
+#### I. Co-hashtag Network
 
 #### Method
 The co-hashtag network is undirected. Each node is a hashtag, and each edge represents the co-existing relation between two hashtags in one tweet. We filtered out the hashtags we used for the query (#NetZero and #netzero) because they appear in every tweet; This allows the other most commonly used hashtags to stand out. The networks use ForceAtlas2 algorithm in Gephi, preventing overlap and having a scale of 200 to make the graph more scattered for better readability. The data is filtered by “giant component” criteria. The color and size of the nodes are decided by their weight, i.e., frequency to be co-hashtaged with other nodes. Nodes with higher weight are bigger and are presented in a darker green color.
@@ -267,7 +267,7 @@ The co-hashtag network is undirected. Each node is a hashtag, and each edge repr
 #### Purpose
 The purpose of this analysis is to see the hashtags most commonly brought up along with #NetZero, and to see the evolution of them from 2021 to 2023.
 
-### Results
+#### Results
 First of all, the co-hashtag network is much more centralized in 2021 because of the United Nations Climate Change Conference (COP 26) that happened in Glasgow, UK. However, besides the special event #COP26 and #UK, the most common hashtags in both 2021 and 2023 related to the climate, energy, and sustainability. These results are coherent to the findings of the Topic Modeling section, reinforcing our inability to fully validate Hypothesis 2.
 
 ![Figure 15](https://github.com/DDPSscipo/Civica_Netzero/assets/169551434/09883395-c1a3-49ff-9dfa-63cd048c9710)
@@ -278,7 +278,7 @@ Figure 15: Co-hashtag Network, 2021
 
 Figure 16: Co-hashtag Network, 2023
 
-### II. User Interaction Network
+#### II. User Interaction Network
 
 #### Method
 The user interaction network is directed. Each node is a user, and each edge represents a relation of one user being quoted or mentioned by another user. The networks use ForceAtlas2 algorithm in Gephi, preventing overlap and having a scale of 200 to make the graph more scattered for better readability. The data is filtered by “giant component” criteria, and the degree range is set to start from 1 to exclude the users that do not have any interactions with others. The sizes of the nodes represent the level of influence of the user, and are decided by their in-degree, i.e., the number of edges coming into a vertex in a directed graph. Nodes with higher in-degree are bigger. The colors of the nodes are decided by their communities, i.e., sets of nodes that are more densely linked among each other than with nodes in other communities.
