@@ -180,11 +180,99 @@ Both in 2021 and 2023, most of the Tweets were classified as neutral. The high v
 ### _Sentiment analysis: The Guardian_ 
 We used VADER (Valence Aware Dictionary and sEntiment Reasoner) to conduct a sentiment analysis for all the articles published by The Guardian regarding Net Zero from September 2021 through February 2024. VADER utilizes a pre-built dictionary containing words and their associated sentiment score, with each word being assigned a polarity (positive, negative or neutral) and an intensity score. We chose VADER because it takes into account punctuation and capitalization of words along with booster words which can affect the positive or negative polarity of adjacent words.  We used VADER to analyze the headlines of The Guardian due to the fact that VADER excels at analyzing short pieces of text and also that it is capable of interpreting informal language and punctuations, taking into account capitalization or exclamation marks which can be important indicators of sentiments in headlines and VADER accounts for these factors. Hence making it a better choice as compared to RoBERTa, which is more ideal towards contextual information in longer texts.
 
-We collected over 1000 articles on the topic of net zero from September 2021 till February 2024. After filtering for the keywords ‘net zero’ and ‘UK’, we identified 156 relevant articles published by The Guardian. Consequently,  we conducted a sentiment analysis on the entire dataset, including articles outside the specified time period , and obtained the following results:
+We collected over 1000 articles on the topic of net zero from September 2021 till February 2024. After filtering for the keywords ‘net zero’ and ‘UK’, we identified 156 relevant articles published by The Guardian. Consequently,  we conducted a sentiment analysis on the entire dataset, including articles outside the specified time period (September 2021 to November 2021 & September 2023 to November 2023), and obtained the following results:
+
+![Table 1](https://github.com/DDPSscipo/Civica_Netzero/assets/169551434/ebc6e6d8-b3f6-41b7-89f1-933791b05453)
+
+
+For all articles published between September 1, 2021, through November 30, 2021, we obtained the following results:
+
+
+![Table 2](https://github.com/DDPSscipo/Civica_Netzero/assets/169551434/22511ed4-7d39-485c-9c8f-15996db2a136)
+
+
+![Image 6](https://github.com/DDPSscipo/Civica_Netzero/assets/169551434/c8b82723-bc34-41fe-9fed-4616f39c0e7f)
+
+Image 6: Article published by _The Guardian_ on 20/10/2021
+
+
+For all articles published between September 1, 2023, through November 30, 2023, we obtained the following results:
+
+
+![Table 3](https://github.com/DDPSscipo/Civica_Netzero/assets/169551434/e704d3df-0c02-44b6-a0f8-4edf733d6690)
+
+
+Overall, the majority of _The Guardian’s_ articles on Net Zero were negative, while the numbers of positive and negative articles were more comparable. This trend is significant in light of the specific timeframes examined. In 2021, during the initial introduction of Net Zero policies by the UK government, there was considerable skepticism regarding the feasibility and effectiveness. In contrast, by 2023, the discourse has shifted due to Prime Minister Rishi Sunak’s rollback on Net Zero commitments and legal case against the UK government alleging non-compliance with the Climate Change Act. This evolving context highlights the changing public and media perceptions of the UK’s Net Zero policies over time. 
+
+![Image 7](https://github.com/DDPSscipo/Civica_Netzero/assets/169551434/3e9e773a-24dd-44fd-9443-8fdb5361918b)
+
+Image 7: Article published by The Guardian on 02/10/2023
 
 
 
+### Topic modeling 
+As we scraped the data from Twitter using Zeeschuimer, we noticed recurrent patterns in the Tweets. In line with previous literature, we noticed that the topic of Net Zero was often mobilized in contexts that are not strictly related to environmental policies. Indeed, the content of some of the Tweets – in our dataset contained in the “full_text” column – is heavily politicized and strongly positioned at the limits of the partisan spectrum. For instance, “net zero” was at times associated with broader phenomena like woke vs. anti-woke culture, anti-vax movements, and xenophobia. These first remarks are what encouraged us to formulate Hypothesis 2, regarding “bipartisan culture wars” on social media. In order to address this issue, we deemed it useful to rely on topic modeling techniques. Topic modeling is a form of unsupervised ML algorithm that  looks for “topics” in data – in our case, our Twitter dataset. The goal is for the algorithm to form topics which group commonly co-occurring words. From this perspective, a topic is simply a list of words that are often used in the same context. Each topic will display a “ranking” of words according to their score (based on their importance) in the topic. We opted for the BERTopic tool as it allows us to create “dense clusters allowing for easily interpretable topics whilst keeping important words in the topic descriptions” (Grootndorst, 2022). We performed a BERTopic modeling analysis on both the 2021 and 2023 data in order to also take into account any potential evolution over time of the topics surrounding Net Zero. 
 
+For the year 2021, we retrieved 225 topics ranging from COP26 to 5G to blockchain. Due to the sheer amount of topics, we analyzed more in depth the first 20, showing their top 10 words and whose topic word scores are displayed in Figure 9 below. 
+
+![Figure 9](https://github.com/DDPSscipo/Civica_Netzero/assets/169551434/6a1be654-4bad-41a5-8473-dbe300900bce)
+
+Figure 9: Topic word scores for the 2021 period 
+
+The first 20 topics seem to be pretty adherent to the core of the concept of net zero and the relevance of the UK NetZero Strategy. Most of the words have to do with energy, green investments, COP26 (which was happening in Glasgow, UK), climate-related events, and greenhouse emissions. It is noteworthy to address topic 17, which is the one that deviates most from Net Zero, concentrating on “referendum” and “election”. Arguably, we could interpret this outlier in the context of the entry into force of the first effects of the 2016 Brexit referendum. In fact, the Northern Ireland Protocol was enforced in early 2021, as was the end of the free movement of people, goods and services between the UK and the EU. Another less convincing explanation could be linked to promises that the Scottish National Party had made regarding a future referendum for Scotland to leave the UK and rejoin the EU. Nevertheless, the mediatic relevance of these electoral promises remains limited. 
+
+The visualization of these topics also appears unintelligible, as shown by Figure 10. We can nonetheless remark that the cluster formed by all 225 topics is rather dense, possibly indicating an overall resonance across topics. This confirms the results from Figure 9.
+
+![Figure 10](https://github.com/DDPSscipo/Civica_Netzero/assets/169551434/ff5ef517-1242-44ea-9f3a-30db4f7e17b5)
+
+Figure 10: Documents and topic for the period 2021
+
+In order to render the visualization more insightful, we decided to apply a “min_cluster_size” parameter to single out the most relevant topics. The minimum cluster size was set to 100. The topics that emerged are 10. The results of this action are shown in Figures 11 and 12. 
+
+
+![Figure 11](https://github.com/DDPSscipo/Civica_Netzero/assets/169551434/10a46314-1eb2-4fb0-af13-f7a44487ae60)
+
+Figure 11: Topic word scores for the 2021 period after applying the min_cluster_size parameter
+
+![Figure 12](https://github.com/DDPSscipo/Civica_Netzero/assets/169551434/a0115499-66e3-4588-babe-8b78b4eceeb9)
+
+
+Figure 12: Documents and topics for the 2021 period after applying the min_cluster_size parameter 
+
+Selecting only topics with a cluster bigger than 100 confirmed the patterns present in the previous top 20 topics. The emerging clusters deal with climate, energy, strategy and agriculture. It is, however, striking to notice in the clusters’ visualization (Figure 12) the number of light gray dots. Evidently, the relative majority of Tweets fall under the “outlier category” (in the BERTopic modeling analysis classified in the “Topic -1” category). This trend has been present across all our topic modeling analysis and will be addressed in depth in our later Limitations section. Overall, for the 2021 period there is no significant element hinting at a “bipartisan culture war” stemming around the Net Zero debate on Twitter. Thus, Hypothesis 2 does not seem to hold when analyzing the Twitter discourse from 2021. 
+
+Nevertheless, for the year 2023, the public debate has evolved in a different direction. Out of the 179 emerged topics, the top 20 topic word scores seem to cover a much broader spectrum of socio-political issues, as shown in Figure 13. 
+
+![FIGURE 13](https://github.com/DDPSscipo/Civica_Netzero/assets/169551434/1f3cc709-6673-4c26-aa8d-b293905678e1)
+
+Figure 13: Topic word scores for the 2023 period
+
+
+Already in Topic 0, the fourth most significant word is “climatescam”, indicating a change of tone around Net Zero. It is also interesting to point out that variations of the name of the current Prime Minister, Rishi Sunak, are present in multiple topics, notably topic 0 and topic 12. This wouldn’t seem particularly surprising if it wasn’t for the fact that in the 2021 dataset, not a single topic (out of the top 20 analyzed in depth) hinted to then-Prime Minister Theresa May, who promoted the Net Zero Strategy at the time. Many speculations could be made in this regard and an explanation could be found in the simple tendency of Prime Minister Sunak to appear frequently in the media, attracting further media attention, whilst Prime Minister May was arguably more reserved. Another rationale could, however, be linked to an increase in the phenomenon of the personalization of politics. Political personalization can be referred to as a “process in which the political weight of the individual actor in the political process increases over time, while the centrality of the political group (i.e., political party) declines” (Rahat and Sheafer, 2007). This phenomenon has been linked to a deterioration of democratic discussion and processes, all whilst exacerbating group differences (Smolo, 2021). In this sense, this trend would fall under the category of the “culture war” hereby hypothesized. Similarly, topic 6 is composed of Twitter profiles of users who seemingly post a lot about Net Zero. These users are public figures, like Fikile Mbalula, former transport minister of South Africa, as well as organizations, like the WWF. Probably the most interesting remarks need to be made about topics 13 and 15. The two topics echo each other in the presence of words like “immigration” and “reformparty_uk”. Topic 13 further specialized in “conservative/s” and “voting” issues”, whilst topic 15 pushes it further to include “migration” and “illegal”, possibly related, and “homeless”. To contextualize, Reform UK, whose president is Nigel Farage, is a eurosceptic, populist and sovranist party that advocated for Brexit, expelling immigrants from the country, refusing the scientific validation of vaccines during the COVID-19 pandemic, and, lately, has been trying to tear down net zero carbon emissions efforts. The presence of immigration and homelessness-related terms hints to the presence of that “bipartisan culture war” mobilization around net zero. Furthermore, the presence of these terms in 2023 and not in 2021 also suggest that the Twitter debate around net zero has not only shifted in terms of discussion topics but has in fact grown more partisan and radical over the past few years, presenting new leads of interpretation. 
+
+We decided to apply the “min_cluster_size” parameter for the 2023 data as well. The threshold of the cluster size was finalized after multiple attempts as most topics appeared to have a very low count of clusters. For this reason, we set it to >30. Four topics emerged, and in this case the outlier issue (topic -1) did not arise in a significant manner (count = 68). 
+
+![Figure14](https://github.com/DDPSscipo/Civica_Netzero/assets/169551434/89e05a79-ab0e-4cca-ab0b-8a4d97d7b280)
+
+Figure 14: Documents and topics for the 2023 period after applying the min_cluster_size parameter 
+
+Almost the entirety of the observations were grouped under Topic 0 with a count of 7093 out of 7342. All the topics retrieved are closely adherent to net zero, as they tackle climate, oil, energy, efficiency, and gas broadly. What the visualization in Figure 14 brings up is how much topic 0 is prevalent, how not “clustered” it is for a topic, as it spreads vastly. The other topics almost seem irrelevant. This outlook does not allow us to follow up on those arguments related to the partial validity of Hypothesis 2 in the previous paragraph. We could believe that the “more polarized” Tweets are contained in topic 0, hence that their number was so small that they were “absorbed” by a broader category. This could mean that Tweets belonging to a culture war are not of significant number to determine the broader conversation around Net Zero on Twitter. Thus, Hypothesis 2 seems to hold very limited validity. 
+
+###_ Network analysis_
+### I. Co-hashtag Network
+
+#### Method
+The co-hashtag network is undirected. Each node is a hashtag, and each edge represents the co-existing relation between two hashtags in one tweet. We filtered out the hashtags we used for the query (#NetZero and #netzero) because they appear in every tweet; This allows the other most commonly used hashtags to stand out. The networks use ForceAtlas2 algorithm in Gephi, preventing overlap and having a scale of 200 to make the graph more scattered for better readability. The data is filtered by “giant component” criteria. The color and size of the nodes are decided by their weight, i.e., frequency to be co-hashtaged with other nodes. Nodes with higher weight are bigger and are presented in a darker green color.
+
+#### Purpose
+The purpose of this analysis is to see the hashtags most commonly brought up along with #NetZero, and to see the evolution of them from 2021 to 2023.
+
+### Results
+First of all, the co-hashtag network is much more centralized in 2021 because of the United Nations Climate Change Conference (COP 26) that happened in Glasgow, UK. However, besides the special event #COP26 and #UK, the most common hashtags in both 2021 and 2023 related to the climate, energy, and sustainability. These results are coherent to the findings of the Topic Modeling section, reinforcing our inability to fully validate Hypothesis 2.
+
+![Figure 15](https://github.com/DDPSscipo/Civica_Netzero/assets/169551434/09883395-c1a3-49ff-9dfa-63cd048c9710)
+
+Figure 15: Co-hashtag Network, 2021
 
 
 
