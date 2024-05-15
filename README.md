@@ -78,7 +78,21 @@ We used Python for our code, which was developed and aided by various online res
 We produced two time-series graphs to explore the number of Tweets throughout the 2021 and 2023 time periods.
 
 ![Figure 1](https://github.com/DDPSscipo/Civica_Netzero/assets/169551434/95d16e47-9dbe-4440-9daf-4d9f6ff8f947)
+Figure 1: Number of Tweets Mentioning “Net Zero” Over Time, 09/01/2021-11/30/2021 
 
+In the 2021 graph (Figure 1), we observe a large increase in the number of Tweets on October 19, 2021. At 538 Tweets, this date received the highest recorded number of Tweets during the 2021 period. This is not surprising given that October 19 was the date of Net Zero’s official implementation in the UK. In the following weeks, there were more dramatic spikes in Tweets and an overall higher number of Tweets compared to before the policy’s implementation. The second highest recorded number of Tweets was 426 on November 3, 2021, which happened to be the date the UK government announced its goal to become the “first ever net zero aligned global financial centre” at the United Nations Climate Change Conference (COP 26) (Plummer, R. & Timmins, B.).
+
+Below are sample Tweets from the 2021 period which illustrate two accounts’ contributions to the discourse. Image 1 is the Tweet that garnered the most likes during the entire captured period in 2021. Topics covered in the Twitter discourse will be explored in-depth in the later Topic Modeling and Network Analysis sections.
+
+
+
+
+
+
+
+
+
+#ESTO YA ESTABA
 
 ## Limitations
 As previously mentioned, there was an issue with collecting Tweets via Zeeschuimer for six days within the intended dataset. The total number of Tweets captured mentioning “net zero” and “uk” are thus a slight undercount over two time-periods. Despite this limitation, because of the significant number of Tweets (nearly 16,000) over six months, the omission of a small number of days worth of Tweets likely would not skew the results. Ideally, we would have incorporated these dates into our dataset, which would have corrected the limitation; however, we were unable to do so given that our asynchronous data analyses were already underway.
