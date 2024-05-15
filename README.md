@@ -110,6 +110,85 @@ Below are a few sample Tweets pulled from the 2023 period:
 Image 3: Tweet about “Net Zero” from 2023 dataset
 
 
+![Image 4](https://github.com/DDPSscipo/Civica_Netzero/assets/169551434/b0edf550-c014-4cb9-b4c7-309e4eb5fec0)
+
+Image 4: Tweet about “Net Zero” from 2023 dataset
+![Image 5](https://github.com/DDPSscipo/Civica_Netzero/assets/169551434/d9eb5e6e-7e68-44e2-a67d-657faef1484a)
+
+Image 5: Tweet about “Net Zero” from 2023 dataset
+
+
+
+### Descriptive analysis: The Guardian
+
+![Figure 3](https://github.com/DDPSscipo/Civica_Netzero/assets/169551434/9fb59347-5e3c-4904-bd4e-9bd59113d1cd)
+
+Figure 3: Number of Guardian Articles About “Net-Zero” published from 01/09/2021 - 30/11/2021
+
+On October 19, _The Guardian_ published three articles, as seen in Figure 3. Beforehand, we see that on most days there were zero articles pertaining to Net Zero with respect to the UK. Shortly after the policy’s implementation, the Guardian published three opinion pieces on October 26 regarding the feasibility of implementation and whether the UK will meet their net zero emissions targets. 
+
+
+![Figure 4](https://github.com/DDPSscipo/Civica_Netzero/assets/169551434/5efce5d3-6511-4112-bdf3-4a3b12582178)
+
+Figure 4: Number of Guardian Articles About “Net-Zero” published from 01/09/2023 - 30/11/2023
+
+On September 20, 2023, there were eight articles published by The Guardian regarding Net Zero, which was the highest number throughout both the 2021 and 2023 periods.
+
+
+### _Descriptive analysis across two sources_
+
+![Figure 5](https://github.com/DDPSscipo/Civica_Netzero/assets/169551434/a1a6ad15-bb46-49d8-9eb0-3b5ea4767eec)
+
+Figure 5: Comparison of Tweets and The Guardian Articles Mentioning “Net Zero” Over Time, (01/09/2021 - 30/11/2021)
+
+
+![Figure 6](https://github.com/DDPSscipo/Civica_Netzero/assets/169551434/16ac9c93-81ce-419f-9c83-33c6ee017954)
+
+Figure 6: Comparison of Tweets and The Guardian Articles Mentioning “Net Zero” Over Time, (01/09/2023 - 30/11/2023)
+
+Across Twitter and in _The Guardian’s_ coverage, there were similar spikes in discourse. The implementation of Net Zero in 2021 was followed by increased conversation on Twitter about the policy. Similarly, The Guardian published several articles about the policy and continued with consistent and more frequent publication as compared to its coverage prior to October 19, 2021. Two years later, the Twitter discourse and _The Guardian_ coverage once again mirrored one another after the Prime Minister’s speech in which he announced rolling back certain climate targets for Net Zero. It makes sense that in response to a major shift in the policy both the public and the press expressed their thoughts with greater frequency in 2023. We can observe the changes in frequency of these discussions/coverage across the two data sources mapped in Figures 5 and 6. In later topic modeling and network analyses, we will unpack the topics connected to Net Zero (on Twitter only), which may aid in our understanding of how the conversation shifted over time.
+
+This overlay graph can be a helpful tool for comparison purposes, demonstrating that overall coverage increased over time. However, we cannot necessarily extrapolate strong conclusions from _The Guardian_ graphical “spikes” for days in which only one article was published in this normalized illustration, especially if we look at those individual dates in isolation as opposed to within the broader timeline.
+
+With respect to Hypothesis 1, there does seem to be mirroring on Twitter and with coverage by _The Guardian_ during both time periods, particularly surrounding significant events. The spikes across the two data sources increase and cluster around dates with major activity – for example, around the implementation of the Net Zero policy in 2021 and Sunak’s speech introducing delays on climate targets in 2023. On Twitter, there were roughly 1,300 more Tweets during the 2021 period compared to in 2023, while in _The Guardian_ there were 26 articles focused on Net Zero in the 2021 period and 36 in 2023. These numbers might suggest that Twitter users were more interested in discussing Net Zero earlier on and immediately after its implementation. Thus, in response to Hypothesis 1, while we can say there was a broad interest in Net Zero on social media and in the news, the two data sources do not mirror one another in terms of increased interest because there was more engagement on social media in 2021 (relative to social media engagement in 2023) and more coverage by The Guardian in 2023 compared to its 2021 coverage. Similarly, with respect to Hypothesis 3 – which we will continue to answer in later analysis sections – we can say that the levels of engagement on Twitter in 2021 demonstrate immediate interest and discussion. The co-occurrence of Net Zero’s implementation and COP26 could explain why engagement in 2021 was higher than in 2023. These events likely also explain the larger and more dramatic and continued fluctuations after the initial 2021 spike representing the policy’s implementation compared to changes following the single major spike in 2023. This could suggest that following the introduction of Net Zero in the UK, there was perhaps not just a heightened sense of interest (Hypothesis 1) but that interest was sustained and discussed more often and for longer during that short-term 2021 period, resulting in more dramatic fluctuations as Twitter users and The Guardian coverage continued to mention the policy. The 2023 data for both Twitter and _The Guardian_ show altogether tighter time-series graphs with fewer fluctuations. This trend can be attributed to the rollback of multiple provisions outlined in the UK government’s Net Zero policy in 2023. _The Guardian _extensively covered these developments, thereby supporting Hypothesis 1 of our study, which contends that traditional media coverage leads to heightened responses on Twitter. 
+
+### Sentiment analysis: Twitter 
+
+In order to test Hypothesis 2, we used sentiment analysis in an attempt to determine whether people discussed Net Zero on Twitter in a positive, negative, or neutral manner. We utilized the RoBERTa-base model, which was trained on ~124 million Tweets from 2018 to 2021, and fine tuned with the TweetEval benchmark. For each Tweet, the model assigns a negative, neutral, and positive score, from 0 to 1.
+
+We computed the mean of the Tweets’ scores per week for both 2021 and 2023 to see if there was an evolution in the sentiments shown. Our results showed consistently a very high neutral score (consistently over 0.8) compared to the positive and negative scores (under 0.2). 
+
+
+![Figures 7   8](https://github.com/DDPSscipo/Civica_Netzero/assets/169551434/bcb30945-faa2-4c9d-b2b4-f99b58193488)
+
+Figures 7 & 8: Overview of sentiment analysis scores for 2021 and 2023 Tweets
+
+We then classified the Tweets as positive, negative or neutral according to the highest scoring category. We obtained the following results across the two different time periods:
+
+Number of Tweets Classified by Sentiment in 2021:
+Neutral     8637
+Positive       1
+
+Number of Tweets Classified by Sentiment in 2023:
+Neutral     7335
+Negative       6
+Positive       1
+
+Both in 2021 and 2023, most of the Tweets were classified as neutral. The high volume of neutral Tweets could indicate that the dataset predominantly covers topics that are either informational or discussed in a manner that does not involve emotional language. Some users may have discussed Net Zero in a measured, factual tone (which could have been scored more accurately as neutral), but there are numerous examples (both anecdotally and seen in the topic modeling and network analyses) of people using subtle, coded, or sarcastic language that the model failed to pick up. Further, these results likely indicate that the RoBERTa model is not tailored for Tweets that discuss topics in a heightened political and/or coded manner, and thus it falls short when analyzing the Tweets of our database. Sentiment analysis remains thus limited for our Twitter analysis and does not allow us to make conclusions in response to our research questions or hypotheses. 
+
+
+### _Sentiment analysis: The Guardian_ 
+We used VADER (Valence Aware Dictionary and sEntiment Reasoner) to conduct a sentiment analysis for all the articles published by The Guardian regarding Net Zero from September 2021 through February 2024. VADER utilizes a pre-built dictionary containing words and their associated sentiment score, with each word being assigned a polarity (positive, negative or neutral) and an intensity score. We chose VADER because it takes into account punctuation and capitalization of words along with booster words which can affect the positive or negative polarity of adjacent words.  We used VADER to analyze the headlines of The Guardian due to the fact that VADER excels at analyzing short pieces of text and also that it is capable of interpreting informal language and punctuations, taking into account capitalization or exclamation marks which can be important indicators of sentiments in headlines and VADER accounts for these factors. Hence making it a better choice as compared to RoBERTa, which is more ideal towards contextual information in longer texts.
+
+We collected over 1000 articles on the topic of net zero from September 2021 till February 2024. After filtering for the keywords ‘net zero’ and ‘UK’, we identified 156 relevant articles published by The Guardian. Consequently,  we conducted a sentiment analysis on the entire dataset, including articles outside the specified time period , and obtained the following results:
+
+
+
+
+
+
+
+
 
 
 
