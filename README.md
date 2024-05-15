@@ -258,7 +258,7 @@ Figure 14: Documents and topics for the 2023 period after applying the min_clust
 
 Almost the entirety of the observations were grouped under Topic 0 with a count of 7093 out of 7342. All the topics retrieved are closely adherent to net zero, as they tackle climate, oil, energy, efficiency, and gas broadly. What the visualization in Figure 14 brings up is how much topic 0 is prevalent, how not “clustered” it is for a topic, as it spreads vastly. The other topics almost seem irrelevant. This outlook does not allow us to follow up on those arguments related to the partial validity of Hypothesis 2 in the previous paragraph. We could believe that the “more polarized” Tweets are contained in topic 0, hence that their number was so small that they were “absorbed” by a broader category. This could mean that Tweets belonging to a culture war are not of significant number to determine the broader conversation around Net Zero on Twitter. Thus, Hypothesis 2 seems to hold very limited validity. 
 
-###_ Network analysis_
+### Network analysis
 ### I. Co-hashtag Network
 
 #### Method
