@@ -3,7 +3,7 @@
 <p align="justify"> 
 CIVICA: Diving into Digital Public Spaces 
 <p align="justify"> 
-<Sciences Po Paris – Spring 2024
+Sciences Po Paris – Spring 2024
 <p align="justify"> 
 Tathagata CHAKRABORTY, Jiexuan CHEN, Ilse Ameyalli SANCHEZ PACHECO, Sophie SHANSHORY, & Elena TOMESANI
 
@@ -286,7 +286,7 @@ Figure 15: Co-hashtag Network, 2021
 
 ![cohashtag_2023](https://github.com/DDPSscipo/Civica_Netzero/assets/114085950/a74bdbb3-ecfd-4abc-b0f4-1d9eb1fc0a32)
 
-:Figure 16: Co-hashtag Network, 2023:
+:-:Figure 16 Co-hashtag Network, 2023:-:
 
 #### II. User Interaction Network
 
