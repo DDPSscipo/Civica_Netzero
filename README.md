@@ -8,22 +8,23 @@ Tathagata CHAKRABORTY, Jiexuan CHEN, Ilse Ameyalli SANCHEZ PACHECO, Sophie SHANS
 
 ## Table of Contents
 - [Introduction](#background)
-  *[Hypothesis](#ques)
+- [Hypothesis](#ques)
 - [Overview: The Implementation of Net Zero](#context)
 - [Literature Review](#lit)
 - [Methodology](#method)
 - [Results and Discussion](#result)
-  *[Descriptive Analysis: Twitter](#twitter)
-  *[Descriptive Analysis: The Guardian](#guardian)
-  *[Descriptive analysis across two sources](#source)
-  *[Sentiment analysis: Twitter](#sentw)
-  *[Sentiment analysis: The Guardian](#senguar)
-  *[Topic Modelling](#topic)
-  *[Network Analysis](#network)
+- [Descriptive Analysis: Twitter](#twitter)
+- [Descriptive Analysis: The Guardian](#guardian)
+- [Descriptive analysis across two sources](#source)
+- [Sentiment analysis: Twitter](#sentw)
+- [Sentiment analysis: The Guardian](#senguar)
+- [Topic Modelling](#topic)
+- [Network Analysis](#network)
 - [Limitations](#limit)
 - [Conclusions](#conclu)
 - [References](#refer)
 
+<a name="background"></a>
 ## Introduction
 
 April 2024 broke another record in the climate change arena. Surpassing the 1991-2020 average for the month, April 2024 was reportedly the hottest April in the last thirty years, reaching over 15°C (Mooney et al., 2024). Over the past decades citizens and decision makers have been forced to confront the visible effects of climate change on communities all around the globe. With climate change, we refer to the long-term shifts in temperatures and weather patterns caused by anthropogenic means. Since the Industrial Revolution, the exponential increase in greenhouse gas (GHG) emissions has led to the trapping of the sun’s heat in the atmosphere, generating a +2°C rise compared to pre-industrial levels. Consequences of this increase in temperatures range from the melting of arctic ice to a growth in weather-related catastrophes like floods, storms and droughts. To tackle the effects of climate change, governments globally have started putting forward legislation and policies at the local and international levels. From the United Nations Framework Conference on Climate Change (UNFCCC) to the Kyoto Protocol to the Paris Agreement, curbing GHG emissions seems to be at the top of the climate agenda. In this perspective, we were interested in analyzing the best practices in the realm of climate policies. Notably, the UK’s 2021 Net Zero Strategy represents the first piece of legislation by a major economy to commit to reaching net zero GHG emissions by 2050. Passed by a conservative government, led by then-Prime Minister Theresa May, the policy is innovative in its sectoral approach, prioritizing strategic sectors like transport, agriculture, and industry at large. Furthermore, the carbon pricing mechanisms would aim to foster energy efficiency measures and attract investments on low-carbon technologies. Due to its ambitiousness, the Strategy has attracted a lot of media and public attention, at times critical. For this reason, investigating how the discourse developed around it on social media and in a leading UK news outlet – namely on Twitter (now X) and The Guardian –  could provide us an insightful perspective on the response towards the climate policies we are seeing ramp up all around the world. We are going to lead our investigation by addressing **_two main research questions:_**
@@ -32,7 +33,7 @@ April 2024 broke another record in the climate change arena. Surpassing the 1991
 
 **RQ2:** How has traditional media coverage by The Guardian and public discourse on Twitter evolved around the UK’s Net Zero policy? 
 
-
+<a name="ques"></a>
 ### Hypotheses
 To develop hypotheses, our team conducted an initial scan of the discourse on Twitter as well as reviewed how The Guardian framed its articles covering the Net Zero Strategy. We observed a surprising amount of Tweets relating Net Zero to broader socio-political critiques. In particular, the term seemed to be deployed in a “culture wars” context by accounts expressing right-wing views, such as opposition to both immigration and environmental protections.
 
@@ -43,7 +44,7 @@ As a result, we derived three hypotheses to understand the Twitter discourse and
 **Hypothesis 2:** Net Zero has often been mobilized on social media in the context of bipartisan culture wars.
 
 **Hypothesis 3:** There is a mutual correlation between the introduction and implementation of the Net Zero Strategy and an increased public interest in the “net zero” concept over the last several years.
-
+<a name="context"></a>
 ## Overview: The Implementation of Net Zero
 
 ### The Net Zero Strategy in the UK
@@ -55,7 +56,7 @@ In June 2022, the environmental organizations Friends of the Earth, ClientEarth,
 
 In March 2023, following the Court’s decision, the UK government published Powering Up Britain: Net Zero Growth Plan, a comprehensive strategy aimed at achieving net zero emissions while promoting economic growth. It addresses recommendations from an independent review of Net Zero. The revised plan focuses on driving investment into green industries like offshore wind, carbon capture, and nuclear energy (Department for Energy Security & Net Zero, 2023).
 Our interest in examining the UK’s Net Zero policy within a specific timeframe stems from its evolving significance in both traditional media and online discourses.
-
+<a name="lit"></a>
 ## Literature Review
 
 ### Social media discourse and agenda setting
@@ -65,7 +66,7 @@ The spread of the Internet and the popularity of social media has revolutionized
 
 Chu & Fletcher (2014) for instance, found evidence of agenda setting led by Twitter (now X) activity. In one example, Canadian news networks were found to have given more coverage to the topic of the federal long-gun registry the day after a peak in activity related to the subject on social media. The influence of Twitter and traditional mass media can go both ways, and greatly varies according to the topic. It is also important to keep in mind that Twitter has a particular type of audience (mostly highly educated, mainly young users).
 
-
+<a name="method"></a>
 ## Methodology 
 
 ### Data collection
@@ -88,7 +89,7 @@ To conduct the descriptive analysis for the data from Twitter and The Guardian, 
 We used Python for our code, which was developed and aided by various online resources and examples, including ChatGPT. We also used Gephi for data visualization.
 
 ## Results and Discussion
-
+<a name="twitter"></a>
 ### Descriptive analysis: Twitter 
 We produced two time-series graphs to explore the number of Tweets throughout the 2021 and 2023 time periods.
 
@@ -133,7 +134,7 @@ Image 4: Tweet about “Net Zero” from 2023 dataset
 Image 5: Tweet about “Net Zero” from 2023 dataset
 
 
-
+<a name="guardian"></a>
 ### Descriptive analysis: The Guardian
 
 ![Figure 3](https://github.com/DDPSscipo/Civica_Netzero/assets/169551434/9fb59347-5e3c-4904-bd4e-9bd59113d1cd)
@@ -149,7 +150,7 @@ Figure 4: Number of Guardian Articles About “Net-Zero” published from 01/09/
 
 On September 20, 2023, there were eight articles published by The Guardian regarding Net Zero, which was the highest number throughout both the 2021 and 2023 periods.
 
-
+<a name="source"></a>
 ### _Descriptive analysis across two sources_
 
 ![Figure 5](https://github.com/DDPSscipo/Civica_Netzero/assets/169551434/a1a6ad15-bb46-49d8-9eb0-3b5ea4767eec)
@@ -166,7 +167,7 @@ Across Twitter and in _The Guardian’s_ coverage, there were similar spikes in 
 This overlay graph can be a helpful tool for comparison purposes, demonstrating that overall coverage increased over time. However, we cannot necessarily extrapolate strong conclusions from _The Guardian_ graphical “spikes” for days in which only one article was published in this normalized illustration, especially if we look at those individual dates in isolation as opposed to within the broader timeline.
 
 With respect to Hypothesis 1, there does seem to be mirroring on Twitter and with coverage by _The Guardian_ during both time periods, particularly surrounding significant events. The spikes across the two data sources increase and cluster around dates with major activity – for example, around the implementation of the Net Zero policy in 2021 and Sunak’s speech introducing delays on climate targets in 2023. On Twitter, there were roughly 1,300 more Tweets during the 2021 period compared to in 2023, while in _The Guardian_ there were 26 articles focused on Net Zero in the 2021 period and 36 in 2023. These numbers might suggest that Twitter users were more interested in discussing Net Zero earlier on and immediately after its implementation. Thus, in response to Hypothesis 1, while we can say there was a broad interest in Net Zero on social media and in the news, the two data sources do not mirror one another in terms of increased interest because there was more engagement on social media in 2021 (relative to social media engagement in 2023) and more coverage by The Guardian in 2023 compared to its 2021 coverage. Similarly, with respect to Hypothesis 3 – which we will continue to answer in later analysis sections – we can say that the levels of engagement on Twitter in 2021 demonstrate immediate interest and discussion. The co-occurrence of Net Zero’s implementation and COP26 could explain why engagement in 2021 was higher than in 2023. These events likely also explain the larger and more dramatic and continued fluctuations after the initial 2021 spike representing the policy’s implementation compared to changes following the single major spike in 2023. This could suggest that following the introduction of Net Zero in the UK, there was perhaps not just a heightened sense of interest (Hypothesis 1) but that interest was sustained and discussed more often and for longer during that short-term 2021 period, resulting in more dramatic fluctuations as Twitter users and The Guardian coverage continued to mention the policy. The 2023 data for both Twitter and _The Guardian_ show altogether tighter time-series graphs with fewer fluctuations. This trend can be attributed to the rollback of multiple provisions outlined in the UK government’s Net Zero policy in 2023. _The Guardian _extensively covered these developments, thereby supporting Hypothesis 1 of our study, which contends that traditional media coverage leads to heightened responses on Twitter. 
-
+<a name="sentw"></a>
 ### Sentiment analysis: Twitter 
 
 In order to test Hypothesis 2, we used sentiment analysis in an attempt to determine whether people discussed Net Zero on Twitter in a positive, negative, or neutral manner. We utilized the RoBERTa-base model, which was trained on ~124 million Tweets from 2018 to 2021, and fine tuned with the TweetEval benchmark. For each Tweet, the model assigns a negative, neutral, and positive score, from 0 to 1.
@@ -191,7 +192,7 @@ Positive       1
 
 Both in 2021 and 2023, most of the Tweets were classified as neutral. The high volume of neutral Tweets could indicate that the dataset predominantly covers topics that are either informational or discussed in a manner that does not involve emotional language. Some users may have discussed Net Zero in a measured, factual tone (which could have been scored more accurately as neutral), but there are numerous examples (both anecdotally and seen in the topic modeling and network analyses) of people using subtle, coded, or sarcastic language that the model failed to pick up. Further, these results likely indicate that the RoBERTa model is not tailored for Tweets that discuss topics in a heightened political and/or coded manner, and thus it falls short when analyzing the Tweets of our database. Sentiment analysis remains thus limited for our Twitter analysis and does not allow us to make conclusions in response to our research questions or hypotheses. 
 
-
+<a name="senguar"></a>
 ### _Sentiment analysis: The Guardian_ 
 We used VADER (Valence Aware Dictionary and sEntiment Reasoner) to conduct a sentiment analysis for all the articles published by The Guardian regarding Net Zero from September 2021 through February 2024. VADER utilizes a pre-built dictionary containing words and their associated sentiment score, with each word being assigned a polarity (positive, negative or neutral) and an intensity score. We chose VADER because it takes into account punctuation and capitalization of words along with booster words which can affect the positive or negative polarity of adjacent words.  We used VADER to analyze the headlines of The Guardian due to the fact that VADER excels at analyzing short pieces of text and also that it is capable of interpreting informal language and punctuations, taking into account capitalization or exclamation marks which can be important indicators of sentiments in headlines and VADER accounts for these factors. Hence making it a better choice as compared to RoBERTa, which is more ideal towards contextual information in longer texts.
 
@@ -224,7 +225,7 @@ Overall, the majority of _The Guardian’s_ articles on Net Zero were negative, 
 Image 7: Article published by The Guardian on 02/10/2023
 
 
-
+<a name="topic"></a>
 ### Topic modeling 
 As we scraped the data from Twitter using Zeeschuimer, we noticed recurrent patterns in the Tweets. In line with previous literature, we noticed that the topic of Net Zero was often mobilized in contexts that are not strictly related to environmental policies. Indeed, the content of some of the Tweets – in our dataset contained in the “full_text” column – is heavily politicized and strongly positioned at the limits of the partisan spectrum. For instance, “net zero” was at times associated with broader phenomena like woke vs. anti-woke culture, anti-vax movements, and xenophobia. These first remarks are what encouraged us to formulate Hypothesis 2, regarding “bipartisan culture wars” on social media. In order to address this issue, we deemed it useful to rely on topic modeling techniques. Topic modeling is a form of unsupervised ML algorithm that  looks for “topics” in data – in our case, our Twitter dataset. The goal is for the algorithm to form topics which group commonly co-occurring words. From this perspective, a topic is simply a list of words that are often used in the same context. Each topic will display a “ranking” of words according to their score (based on their importance) in the topic. We opted for the BERTopic tool as it allows us to create “dense clusters allowing for easily interpretable topics whilst keeping important words in the topic descriptions” (Grootndorst, 2022). We performed a BERTopic modeling analysis on both the 2021 and 2023 data in order to also take into account any potential evolution over time of the topics surrounding Net Zero. 
 
@@ -272,7 +273,7 @@ We decided to apply the “min_cluster_size” parameter for the 2023 data as we
 Figure 14: Documents and topics for the 2023 period after applying the min_cluster_size parameter 
 
 Almost the entirety of the observations were grouped under Topic 0 with a count of 7093 out of 7342. All the topics retrieved are closely adherent to net zero, as they tackle climate, oil, energy, efficiency, and gas broadly. What the visualization in Figure 14 brings up is how much topic 0 is prevalent, how not “clustered” it is for a topic, as it spreads vastly. The other topics almost seem irrelevant. This outlook does not allow us to follow up on those arguments related to the partial validity of Hypothesis 2 in the previous paragraph. We could believe that the “more polarized” Tweets are contained in topic 0, hence that their number was so small that they were “absorbed” by a broader category. This could mean that Tweets belonging to a culture war are not of significant number to determine the broader conversation around Net Zero on Twitter. Thus, Hypothesis 2 seems to hold very limited validity. 
-
+<a name="network"></a>
 ### Network analysis
 #### I. Co-hashtag Network
 
@@ -319,7 +320,7 @@ Figure 18: User Interaction Network, 2023
 The comparison of User Interaction Networks of 2021 and 2023 shows that the discourse around Net Zero on Twitter had a significant shift in influence landscape: from mainly being led by official accounts with a generally supportive attitude towards the policy in 2021 to mainly being led by individuals who opposed it. Combined with the conservative political stance shown by some of the individuals and that these opposers were only active on this particular issue on Twitter in 2023 and not 2021, this analysis provides some support for Hypothesis 2. It is possible that discussion surrounding Net Zero has been mobilized, at least to some extent, on Twitter in the context of bipartisan culture wars.
 
 The opinion leaders’ shift from 2021 to 2023 also supports our Hypothesis 3, as the increased participation of individual accounts (rather than heavier participation by official accounts, as seen in 2021) demonstrates an increased public interest in the net zero concept.
-
+<a name="limit"></a>
 ## Limitations
 As previously mentioned, there was an issue with collecting Tweets via Zeeschuimer for six days within the intended dataset. The total number of Tweets captured mentioning “net zero” and “uk” are thus a slight undercount over two time-periods. Despite this limitation, because of the significant number of Tweets (nearly 16,000) over six months, the omission of a small number of days worth of Tweets likely would not skew the results. Ideally, we would have incorporated these dates into our dataset, which would have corrected the limitation; however, we were unable to do so given that our asynchronous data analyses were already underway.
 
@@ -330,11 +331,11 @@ A third limitation for data collection is the rate limits on The Guardian’s AP
 As noted in our brief discussion of sentiment analysis, using such an approach to understand the attitudes of the Net Zero discussion on Twitter largely failed. The RoBERTa model did not recognize positive or negative sentiments across Tweets, only recognizing a negligible number of Tweets as positive or negative. Even from briefly reviewing a handful of random Tweets, we can see that there were strong feelings expressed by people online, and that Net Zero was being associated with a host of topics, including the environment but also broader socio-political topics. The incompatibility of these results may be because the content and references within the Tweets were too subtle for RoBERTa to understand. Additionally, we did not fine tune or train the model for this analysis, which also likely contributed to the failed results. Finally, there are broader challenges when it comes to interpreting sentiment analysis results, so such an approach does not seem particularly useful for answering our research questions and hypotheses. 
 
 Finally, with respect to topic modeling, the most considerable limitation to our analysis can be imputed to the high number of outliers in both the 2021 and 2023 datasets. Grouped together in “topic -1”, outliers often accounted for the vast majority of observations. In particular, for the 2021 period, outliers amounted to 3072 whilst the next biggest topic reached 209 Tweets. Similarly for 2023, outliers were 2854 and topic 0 had 188 Tweets. We could explain this high of a number of outliers with the complexity and nuance of the public discourse around net zero. It can be hard for BERTopic to detect the multiple interpretations that Tweets have and place them in defined categories. We have encountered a similar issue when performing the sentiment analysis, that ultimately struggle to understand the complexity of certain contributions. This issue evidently questions the validity of our results, especially those related to Hypothesis 2. 
-
+<a name="conclu"></a>
 ## Conclusions
 This investigation aimed to explore and unpack the social and news media discourse about the UK’s Net Zero climate policy. It led to several fascinating findings. In our research, we observed politicians, civil society organizations/groups, and individuals engaging in commentary about Net Zero on Twitter. In 2021, official organizations and leaders dominated the conversation, which more narrowly centered on topics specifically related to climate change and the implementation of Net Zero. Two years later in 2023, we began to see new players (more private individuals), whose discourse on Net Zero was at times associated (but not overwhelmingly) with broad socio-political issues and voicing opposition to environmental policies and immigration. In traditional media, The Guardian’s coverage in some ways mirrored the engagement on Twitter – pieces were published by the newspaper during moments of critical development in both 2021 and 2023, providing narratives to the implementation or changes to Net Zero and offering a platform for opinion pieces on the policy.
 As climate change will necessitate more aggressive policy responses, people will continue to want their voices to be heard on the topic. Individuals, politicians, and civil society groups alike share information and opinions, shaping conversation on and offline. The discourse on social media platforms like Twitter can potentially reveal trends in public interest, which can in turn bolster as well as inform the insights within traditional media.  
-
+<a name="refer"></a>
 ## References
 
 Chu, W., & Fletcher, F. (2014). Social media and agenda setting. Canadian democracy from the ground up: Perceptions and performance, 125-147.
