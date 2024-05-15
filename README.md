@@ -329,19 +329,33 @@ As climate change will necessitate more aggressive policy responses, people will
 <a name="refer"></a>
 ## References
 
+<p align="justify"> 
 Chu, W., & Fletcher, F. (2014). Social media and agenda setting. Canadian democracy from the ground up: Perceptions and performance, 125-147.
+<p align="justify"> 
 Client Earth. (18 July 2022). Historic High Court ruling finds UK government’s climate strategy ‘unlawful’. https://www.clientearth.org/latest/press-office/press/historic-high-court-ruling-finds-uk-government-s-climate-strategy-unlawful/
+<p align="justify"> 
 Department for Energy Security & Net Zero. (4 April 2023). Powering Up Britain: Net Zero Growth Plan. https://www.gov.uk/government/publications/powering-up-britain/powering-up-britain-net-zero-growth-plan
+<p align="justify"> 
 Gayle, D.  (18 July 2022). Court orders UK government to explain how net zero policies will reach targets. The Guardian. https://www.theguardian.com/environment/2022/jul/18/court-orders-uk-government-to-explain-how-net-zero-policies-will-reach-targets
+<p align="justify"> 
 Gilardi, F., Gessler, T., Kubli, M., & Müller, S. (2022). Social media and political agenda setting. Political communication, 39(1), 39-60.
+<p align="justify"> 
 Government of the United Kingdom. (2023, 20 September). PM speech on Net Zero: 20 September 2023. https://www.gov.uk/government/speeches/pm-speech-on-net-zero-20-september-2023#:~:text=This%20country%20is%20proud%20to,eases%20the%20burdens%20on%20families. 
+<p align="justify"> 
 Grootendorst, M. (2022). BERTopic: Neural topic modeling with a class-based TF-IDF procedure. arXiv preprint arXiv:2203.05794. 
+<p align="justify"> 
 Horton, H. (2023, 20 September). UK net zero policies: what has Sunak scrapped and what do changes mean? The Guardian. https://www.theguardian.com/politics/2023/sep/20/uk-net-zero-policies-scrapped-what-do-changes-mean. 
-Legislation. “Climate Change Act 2008.” Legislation.Gov.Uk, Statute Law Database, www.legislation.gov.uk/ukpga/2008/27/introduction. 
+<p align="justify"> 
+Government of the United Kingdom. “Climate Change Act 2008.” Legislation.Gov.Uk, Statute Law Database, www.legislation.gov.uk/ukpga/2008/27/introduction. 
+<p align="justify"> 
 McCombs, M. E., & Shaw, D. L. (1972). The Agenda-Setting Function of Mass Media. Public Opinion Quarterly, 36 (2), 176–187.
+<p align="justify"> 
 Mooney, A., Bernard, S., & Harris, B. (2024, May 8). Record temperatures expected to continue to drive extreme weather. Financial Times. https://www.ft.com/content/cf8f2870-6024-4c35-ae55-d0f9b465fdcd. 
+<p align="justify"> 
 Plummer, R. & Timmins, B. (2021, 3 November). COP26: UK firms forced to show how they will hit net zero. BBC. https://www.bbc.com/news/business-59136214. 
+<p align="justify"> 
 Rahat, G. and Sheafer, T. (2007). The personalization(s) of Politics: Israel 1949-2003, Political Communication, 24(1): 65-80.
+<p align="justify"> 
 United Nations. “Net Zero Coalition.” United Nations, www.un.org/en/climatechange/net-zero-coalition. 
 
 
